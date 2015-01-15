@@ -1052,14 +1052,14 @@
                 <key id="3" time="400" spin="-1">
                     <bone x="43.616371" y="9.669573" angle="114.717603" scale_x="0.877085"/>
                 </key>
-                <key id="4" time="500" spin="-1">
-                    <bone x="42.30177" y="10.06164" angle="59.374045" scale_x="0.877085"/>
+                <key id="4" time="500">
+                    <bone x="42.30177" y="10.06164" angle="96.608412" scale_x="0.877085"/>
                 </key>
                 <key id="5" time="600" spin="-1">
-                    <bone x="40.987169" y="10.453707" angle="346.327469" scale_x="0.877085"/>
+                    <bone x="40.987169" y="10.453707" angle="115.687328" scale_x="0.877085"/>
                 </key>
-                <key id="6" time="700" spin="-1">
-                    <bone x="40.987169" y="10.453707" angle="255.899548" scale_x="0.877085"/>
+                <key id="6" time="700">
+                    <bone x="40.987169" y="10.453707" angle="97.686202" scale_x="0.877085"/>
                 </key>
             </timeline>
             <timeline id="16" obj="3" name="bone_003" object_type="bone">
@@ -1099,13 +1099,13 @@
                     <bone x="46.616541" y="-9.774436" angle="130.058009" scale_x="0.86865"/>
                 </key>
                 <key id="4" time="500" spin="-1">
-                    <bone x="45.48182" y="-6.85926" angle="56.762609" scale_x="0.86865"/>
+                    <bone x="45.48182" y="-6.85926" angle="108.791494" scale_x="0.86865"/>
                 </key>
                 <key id="5" time="600" spin="-1">
-                    <bone x="44.347099" y="-3.944085" angle="318.410727" scale_x="0.86865"/>
+                    <bone x="44.347099" y="-3.944085" angle="89.85935" scale_x="0.86865"/>
                 </key>
-                <key id="6" time="700" spin="-1">
-                    <bone x="44.347099" y="-3.944085" angle="263.075489" scale_x="0.86865"/>
+                <key id="6" time="700">
+                    <bone x="44.347099" y="-3.944085" angle="82.455332" scale_x="0.86865"/>
                 </key>
             </timeline>
             <timeline id="18" obj="5" name="bone_005" object_type="bone">
@@ -1254,7 +1254,7 @@
                 </key>
             </timeline>
         </animation>
-        <animation id="2" name="Landing" length="800" interval="100" looping="false">
+        <animation id="2" name="Landing" length="700" interval="100" looping="false">
             <mainline>
                 <key id="0">
                     <bone_ref id="0" timeline="13" key="0"/>
