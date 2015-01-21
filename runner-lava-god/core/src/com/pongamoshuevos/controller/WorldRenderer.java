@@ -28,7 +28,7 @@ public class WorldRenderer extends ScreenAdapter {
 	private Batch spriteBatch;
 	
 	private CollisionManager cm;
-	private AssetLoader al;
+	private AssetLoader loader;
 	
 	private Pool<Rectangle> rectPool = new Pool<Rectangle>() {
 		@Override
@@ -38,18 +38,15 @@ public class WorldRenderer extends ScreenAdapter {
 	};
 
 	public WorldRenderer() {
-		al = new AssetLoader();
-		al.loadAssets();
+		loader = AssetLoader.getInstance();
 		
 		player = new Player();		
-		level = new Level(al.getManager()
-				.get("level1.tmx", TiledMap.class));
+		level = new Level(loader.get("level1.tmx", TiledMap.class));
 		
 		cm = new CollisionManager(player, level, rectPool);
 		
 		Gdx.input.setInputProcessor(new InputManager(player));
-		
-		al.loadPlayerTextures(player);
+
 		player.setPosition(new Vector2(15, 17));
 		player.setWidth(WORLD_TO_SCREEN * player.getPlayerIdleRight()
 				.getRegionWidth());
